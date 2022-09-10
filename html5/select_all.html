@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko"></html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM Basic</title>
+        <script>
+           // 이벤트를 연결 합니다.
+           window.onload = function () {
+               //문서 객체를 선언합니다.
+               var headers = document.querySelectorAll('h1');
+
+               for (var i = 0; i < headers.length; i++) {
+                   //변수 선언
+                   var header = headers[i];
+               //문서 객체를 조작합니다.
+               header.style.color ='orange' ;
+               header.style.background ='red' ;
+               header.textContent ='From Javascript';
+               }
+           };
+    </script>
+</head>
+<body>
+   <h1>Header - 1</h1>
+   <h1>Header - 2</h1>
+   <h1>Header - 3</h1>
+</body>
+</html>

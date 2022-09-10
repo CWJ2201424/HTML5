@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>function document</title>
+        <script>
+            function callTenTimes(callback) {
+                for (var i = 0; i< 10; i++) {
+                    callback();
+                }
+            }
+            var callback = function() {
+                document.write("함수호출<br>");
+            };
+
+            callTenTimes(callback);
+        </script>
+    </head>
+</html>

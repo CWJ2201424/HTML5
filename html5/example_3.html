@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>One True Layout</title>
+        <style>
+                body {
+                    width: 500px;
+                    margin: 10px auto;
+                }
+
+                #middle { overflow: hidden; }
+                #left { float: left; width: 150px; background: red; }
+                #right { float: right; width: 350px; background: blue; }
+
+                #top { background: green; 
+                text-align: center;
+                font-size: 2em;
+                color: white; }
+                #bottom { background: purple; 
+                    text-align: center;
+                    color: white; }
+        </style>
+    </head>
+    <body>
+        <div id="top">One True Layout</div>
+        <div id="middle">
+            <div id="left">
+                <ul>
+                    <li>메뉴-1</li>
+                    <li>메뉴-2</li>
+                    <li>메뉴-3</li>
+                    <li>메뉴-4</li>
+                    <li>메뉴-5</li>
+                </ul>
+            </div>
+            <div id="right">여기에 오른쪽 내용이 들어갑니다. 수정해서 처리할수 있습니다.
+            </div>
+        </div>
+        <div id="bottom">copyleft by CWJ</div>
+    </body>
+    </html>

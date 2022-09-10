@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>문자 선택자 실습</title>
+<style>
+<!--2em은 글자크기 2배-->
+h1::first-letter{font-size:2em;}
+h1::first-line{font-weight:bold; color:blue;}
+<!--p태그 앞에 새해 라는 문자 출력-->
+p::before{content: '새해 ';}
+<!--a href 링크 텍스트가 영진 전문대 다음 웹주소 텍스트 오고 하이퍼링크가 온다-->
+a::after{content: ' 웹 주소 - 'attr(href);}
+*::selection{background-color: aqua;}
+</style>
+</head>
+<body>
+<h1>2022년</h1>
+<p>복 많이 받으세요.</p>
+<a href="http://www.yju.ac.kr">영진전문대학교</a><br>
+</body>
+</html>

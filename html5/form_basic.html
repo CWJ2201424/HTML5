@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form basic</title>
+        <script type="text/javascript">
+            function msg() {
+                alert("잘 전송되었습니다.");
+            }
+        </script>
+    </head>
+        <body>
+            <form method="get">
+                이름 : <input type="text" 
+                name="search" /><br />
+                비번 : <input type="password" name="pw"><br />
+                취미 : <input type="checkbox" name="hobby">등산
+                <input type="checkbox" name="hobby">낚시
+                <input type="checkbox" name="hobby">독서
+                <input type="checkbox" name="hobby">게임<br>
+                성별 : <input type="radio" name="gender" value="M"> 남
+                <input type="radio" name="gender" value="W"> 여<br />
+                파일첨부 : <input type="file" name="file"><br>
+                히든 : <input type="hidden" name="hidden"><br>
+                메뉴 : <select multiple="multiple">
+                <optgroup label="간식메뉴">
+                    <option>김밥</option>
+                    <option>어묵</option>
+                    <option>순대</option>
+                    <option>떡볶이</option></optgroup>
+                <optgroup label="식사메뉴">
+                    <option>국밥</option>
+                    <option>국수</option>
+                    <option>칼국수</option>
+                </optgroup></select><br />
+                <input type="reset" name="reset">
+                <input type="submit" name="submit" />
+                <input type="button" value="click" onclick="msg()" />
+                </form>
+            </body>
+</html>

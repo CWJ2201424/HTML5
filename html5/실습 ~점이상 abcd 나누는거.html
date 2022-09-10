@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트 베이직</title>
+<script>
+var grade;
+var score = prompt("당신의 점수를 입력하세요", 100);
+score = parseInt(score);
+if(score >= 90) // score가 90 이상
+ grade = "A";
+else if(score >= 80) // 80 이상 90 미만
+grade = "B";
+ else if(score >= 70) // 70 이상 80 미만
+ grade = "C";
+else if(score >= 60) // 60 이상 70 미만
+ grade = "D";
+ else // 60 미만
+ grade = "F";
+ document.write(score + "점은 " + grade + "입니다.<br>")
+</script>
+
+        </script>
+    </head>
+    <body></body>
+</html>
